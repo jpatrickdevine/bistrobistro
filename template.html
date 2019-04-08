@@ -1,0 +1,161 @@
+<!--
+ *
+ * Bistro! Bistro! v1
+ *
+-->
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        Bistro! Bistro! – French-inspired Russian tapas in Center City, Philadelphia
+    </title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!--Import Google Icon Fonts: Material Icons and Montserrat -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet">
+    <!-- Import Materialize compiled and minified CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Fixed white bar at top; 62px high, bottom box shadow -->
+    <div class="white-bar"></div>
+
+    <!-- Flex row of fixed buttons at top -->
+    <div class="fixed-top-buttons">
+        <!-- Branding icon button -->
+        <a href="#" class="icon-btn__brand" title="Bistro! Bistro! Home">
+            <img src="img/bistrobistro-logo-thumb.jpg" alt="Bistro! Bistro!">
+        </a>
+        <!-- Flex row top nav buttons: reservatiosn and menu bars -->
+        <div class="nav__bb">
+            <!-- Top right 'request a table' button; hidden in mobile view -->
+            <a href="#reservations" class="bttn bttn--res" title="Request a Table">
+                Request a Table
+            </a>
+            <!-- Material menu icon/button that opens sidenave drawer -->
+            <a href="#" data-target="pull-drawer" class="sidenav-trigger" title="Open menu">
+                <i class="material-icons bttn__menu">menu</i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Material sidenav markup -->
+    <div class="sidenav" id="pull-drawer">
+        <!-- Branding icon, centered -->
+        <a href="#" class="icon-btn__sidenav sidenav-close" title="Bistro! Bistro! Home">
+            <img src="img/bistrobistro-logo-thumb.jpg" alt="Bistro! Bistro!">
+        </a>
+        <!-- Material sidenav list, added styles -->
+        <ul class="sidenav__bb">
+            <li><a href="#" class="sidenav-close">Home</a></li>
+            <li><a href="#about" class="sidenav-close">About</a></li>
+            <li><a href="#events" class="sidenav-close">Private Events</a></li>
+            <li><a href="#reservations" class="sidenav-close">Reservations</a></li>
+            <li><a href="#contact" class="sidenav-close">Contact</a></li>
+        </ul>
+        <!-- sidenav 'request a table' button; hidden in desktop view -->
+        <a href="#reservations" class="bttn bttn--full-width bttn--tablet sidenav-close" title="Request a Table">
+            Request a Table
+        </a>
+    </div>
+    
+    <!-- Main styles -->
+    <main class="bb-main-styles">
+        <!-- Home section -->
+        <section class="bb-section">
+            <!-- White bar, block, sticky section heading -->
+            <h2 class="bb-section__heading">
+                Bistro! Bistro!
+            </h2>
+            <div class="bb-section__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis <a href="#contact">officiis fuga laborum!</a> Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="bb-section">
+            <h2 class="bb-section__heading" id="about">
+                About
+            </h2>
+            <div class="bb-section__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            </div>
+        </section>
+        
+        <!-- Events section -->
+        <section class="bb-section">
+            <h2 class="bb-section__heading" id="events">
+                Private Events
+            </h2>
+            <div class="bb-section__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            </div>
+        </section>
+
+        <!-- Reservations section -->
+        <section class="bb-section">
+            <h2 class="bb-section__heading" id="reservations">
+                Reservations
+            </h2>
+            <div class="bb-section__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="bb-section">
+            <h2 class="bb-section__heading" id="contact">
+                Contact
+            </h2>
+            <div class="bb-section__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fixed bottom buttons; desktop: only 'top' button -->
+    <div class="fixed-bottom-buttons">
+        <!-- 'Back to top' button; bottom right -->
+        <div class="bttn__go-top">
+            <a href="#" class="icon-btn" title="Back to top">
+                <i class="small material-icons">arrow_upward</i>
+            </a>
+        </div>
+        <!-- FOR ANOTHER VERSION - Fixed bottom row, mobile only -->
+        <!-- <div class="mobile-bottom-row">
+            <button>Call</button>
+            <button>Reserve</button>
+            <button>Menus</button>
+        </div> -->
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Materialize compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // jQuery document ready
+        $(document).ready(function(){
+            // Initialize Materialize sidenav
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
