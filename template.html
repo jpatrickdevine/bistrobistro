@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--Import Google Icon Fonts: Material Icons and Montserrat -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet">
-    <!-- Import Materialize compiled and minified CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Include Materialize compiled and minified CSS -->
+    <link href="css/materialize.min.css" rel="stylesheet">
     <!-- Site styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -63,7 +63,7 @@
             <li><a href="#contact" class="sidenav-close">Contact</a></li>
         </ul>
         <!-- sidenav 'request a table' button; hidden in desktop view -->
-        <a href="#reservations" class="bttn bttn--full-width bttn--tablet sidenav-close" title="Request a Table">
+        <a href="#requests" class="bttn bttn--full-width bttn--tablet sidenav-close" title="Request a Table" style="padding: 0.3rem 0">
             Request a Table
         </a>
         <!-- sidenav social media icons -->
@@ -89,15 +89,15 @@
                 Bistro! Bistro!
             </h2>
             <div class="bb-section__content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis <a href="#contact">officiis fuga laborum!</a> Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
             </div>
         </section>
 
         <!-- About section -->
-        <section class="bb-section">
-            <h2 class="bb-section__heading" id="about">
+        <section id="about" class="bb-section">
+            <h2 class="bb-section__heading">
                 About
             </h2>
             <div class="bb-section__content">
@@ -108,8 +108,8 @@
         </section>
         
         <!-- Events section -->
-        <section class="bb-section">
-            <h2 class="bb-section__heading" id="events">
+        <section id="events" class="bb-section">
+            <h2 class="bb-section__heading">
                 Private Events
             </h2>
             <div class="bb-section__content">
@@ -120,20 +120,116 @@
         </section>
 
         <!-- Reservations section -->
-        <section class="bb-section">
-            <h2 class="bb-section__heading" id="reservations">
+        <section id="reservations" class="bb-section">
+            <h2 class="bb-section__heading">
                 Reservations
             </h2>
-            <div class="bb-section__content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            <div class="bb-section__content bb-section__content--flex">
+                <div class="bb-section__left-top">
+                    <h3 class="bb-content__heading" style="margin-bottom: 3rem">
+                        Call us
+                    </h3>
+                    <h6>(555) 555-9999</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum!</p>
+                </div>
+                <!-- Reservation requests form section -->
+                <div id="requests" class="bb-section__right-bottom">
+                    <h3 class="bb-content__heading">
+                        Request a table
+                    </h3>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12 m6">
+                                    <label for="f_name">First Name</label>
+                                    <input id="f_name" name="f_name" type="text" class="validate">
+                                    <span class="helper-text" data-error="Required"></span>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <label for="l_name">Last Name</label>
+                                    <input id="l_name" name="l_name" type="text" class="validate">
+                                    <span class="helper-text" data-error="Required"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m6">
+                                    <label for="email">Email</label>
+                                    <input id="email" type="text" class="validate">
+                                    <span class="helper-text" data-error="Enter a valid email address."></span>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <label for="phone">Phone</label>
+                                    <input id="phone" type="text" class="validate">
+                                    <span class="helper-text" data-error="Enter a valid phone number."></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m4">
+                                    <label for="date">Date</label>
+                                    <input type="text" class="datepicker">
+                                </div>
+                                <div class="input-field col s6 m4">
+                                    <select>
+                                        <option value="" disabled selected>Time</option>
+                                        <option value="1">5:30</option>
+                                        <option value="2">7:30</option>
+                                        <option value="3">9:30</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col s6 m4">
+                                    <select>
+                                        <option value="" disabled selected>Party</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="3">5</option>
+                                        <option value="3">6</option>
+                                        <option value="3">6+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6 m4">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Birthday</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col s6 m4">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Anniversary</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col s6 m4">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Allergy</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <label for="textarea2">Additional Information</label>
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="240" placeholder="Special occasions, allergies, etc"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <button class="btn waves-effect" type="submit" style="width: 100%">Submit Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact section -->
-        <section class="bb-section">
-            <h2 class="bb-section__heading" id="contact">
+        <section id="contact" class="bb-section">
+            <h2 class="bb-section__heading">
                 Contact
             </h2>
             <div class="bb-section__content">
@@ -148,7 +244,7 @@
     <div class="fixed-bottom-buttons">
         <!-- 'Back to top' button; bottom right -->
         <div class="bttn__go-top">
-            <a href="#" class="icon-btn" title="Back to top">
+            <a href="#" class="icon-btn waves-effect" title="Back to top">
                 <i class="small material-icons">arrow_upward</i>
             </a>
         </div>
@@ -163,12 +259,16 @@
     <!-- Include jQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Materialize compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script>
         // jQuery document ready
         $(document).ready(function(){
             // Initialize Materialize sidenav
             $('.sidenav').sidenav();
+            // Initialize Materialize datepicker
+            $('.datepicker').datepicker();
+            // Initialize Materialize form select
+            $('select').formSelect();
         });
     </script>
 </body>
