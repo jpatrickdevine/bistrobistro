@@ -11,26 +11,26 @@
     --heading-letter-spacing: 0.09rem;
     --primary-color: #00336b; /* blue */
     --secondary-color: #a30000; /* red */
-    --icon-btn-font-size: 1.6rem
+    --icon-btn-font-size: 1.6rem;
 }
 html {
     font-size: var(--font-size);
     font-family: var(--font-family);
     box-sizing: border-box;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 body {
-    color: var(--font-color)
+    color: var(--font-color);
 }
 p {
-    line-height: 1.6
+    line-height: 1.6;
 }
 p > a {
     color: var(--secondary-color);
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 /* Fixed top white bar */
@@ -42,7 +42,7 @@ p > a {
     height: 62px;
     border-bottom: 2px solid hsl(0, 0%, 91.3%);
     box-shadow: 0 0.35rem 0.45rem 0 hsl(0, 0%, 92.3%);
-    z-index: 500
+    z-index: 500;
 }
 
 /* Fixed top buttons */
@@ -57,11 +57,11 @@ p > a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    z-index: 700
+    z-index: 700;
 }
 @media screen and (max-width: 430px) {
     .fixed-top-buttons {
-        padding: 0 0.5rem
+        padding: 0 0.5rem;
     }
 }
 
@@ -69,12 +69,12 @@ p > a {
 a.icon-btn__brand > img {
     margin-top: 2px;
     width: 58px;
-    height: 58px
+    height: 58px;
 }
 @media screen and (max-width: 430px) {
     a.icon-btn__brand > img {
         width: 48px;
-        height: 48px
+        height: 48px;
     }
 }
 
@@ -83,10 +83,10 @@ a.icon-btn__brand > img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 .nav__bb > * {
-    margin: 0 0 0 0.75rem
+    margin: 0 0 0 0.75rem;
 }
 
 /* Bttn classes */
@@ -98,35 +98,35 @@ a.bttn {
     font-family: var(--heading-font-family);
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
-    transition: 0.3s
+    transition: 0.3s;
 }
 a.bttn:hover {
     color: white;
     background-color: var(--secondary-color);
     text-decoration: none;
-    transition: 0.3s
+    transition: 0.3s;
 }
 a.bttn--full-width {
     margin: 1rem;
     text-align: center;
-    display: block
+    display: block;
 }
 a.bttn--tablet {
-    display: none
+    display: none;
 }
 @media screen and (max-width: 769px) {
     a.bttn--tablet {
-        display: block
+        display: block;
     }
 }
 
 /* Reservation button, top */
 a.bttn--res {
-    margin-top: -0.2rem
+    margin-top: -0.2rem;
 }
 @media screen and (max-width: 769px) {
     a.bttn--res {
-        display: none
+        display: none;
     }
 }
 
@@ -134,14 +134,14 @@ a.bttn--res {
 .bttn__menu {
     margin-top: 2px;
     color: var(--primary-color);
-    font-size: 1.4rem
+    font-size: 1.4rem;
 }
 
 /* Sidenav branding icon/button */
 .icon-btn__sidenav {
     margin-top: 1rem;
     text-align: center;
-    display: block
+    display: block;
 }
 
 /* Sidenav B!B! styles */
@@ -150,26 +150,26 @@ a.bttn--res {
     font-size: 1rem;
     font-family: var(--heading-font-family);
     text-transform: uppercase;
-    letter-spacing: var(--heading-letter-spacing)
+    letter-spacing: var(--heading-letter-spacing);
 }
 
 /* Sidenav social media icons */
 .sidenav__social-icons {
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
 }
 .sidenav__social-icons > a {
     padding: 0.2rem 0.5rem;
     color: var(--secondary-color);
-    font-size: 1.6rem
+    font-size: 1.6rem;
 }
 
 /* B!B! main styles */
 .bb-main-styles {
     position: relative;
     margin: 0;
-    padding-bottom: 50vh
+    padding-bottom: 50vh;
 }
 
 /* B!B! section styles*/
@@ -195,11 +195,11 @@ a.bttn--res {
     letter-spacing: var(--heading-letter-spacing);
     text-transform: uppercase;
     display: block;
-    z-index: 600
+    z-index: 600;
 }
 @media screen and (max-width: 430px) {
     .bb-section__heading {
-        font-size: 1.1rem
+        font-size: 1.1rem;
     }
 }
 
@@ -207,17 +207,17 @@ a.bttn--res {
 .bb-section__content {
     margin: 2.5rem auto;
     padding: 0 1rem;
-    max-width: 925px
+    max-width: 925px;
 }
 
 /* B!B! section content w/ flex */
 .bb-section__content--flex {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
 }
 @media screen and (max-width: 769px) {
     .bb-section__content--flex {
-        flex-direction: column
+        flex-direction: column;
     }
 }
 
@@ -225,25 +225,25 @@ a.bttn--res {
 .bb-section__left-top {
     padding: 0 3rem 0 0;
     max-width: 42%;
-    border-right: 2px solid var(--secondary-color)
+    border-right: 2px solid var(--secondary-color);
 }
 @media screen and (max-width: 769px) {
     .bb-section__left-top {
         padding: 0 0 2rem 0;
         max-width: 100%;
         border-right: none;
-        border-bottom: 2px solid var(--secondary-color)
+        border-bottom: 2px solid var(--secondary-color);
     }
 }
 
 /* B!B! section right-bottom */
 .bb-section__right-bottom {
     width: 100%;
-    padding: 0 0 0 3rem
+    padding: 0 0 0 3rem;
 }
 @media screen and (max-width: 769px) {
     .bb-section__right-bottom {
-        padding: 2rem 0 0 0
+        padding: 2rem 0 0 0;
     }
 }
 
@@ -253,7 +253,7 @@ a.bttn--res {
     color: #222;
     font-size: 1.2rem;
     font-family: var(--heading-font-family);
-    font-weight: bold
+    font-weight: bold;
 }
 
 /* Fixed bottom buttons */
@@ -264,15 +264,18 @@ a.bttn--res {
     width: 100%;
     display: flex;
     flex-direction: column;
-    z-index: 700
+    z-index: 700;
 }
 
 /* 'Back to top' button styles */
 .bttn__go-top {
-    padding: 1.3rem 1rem
+    position: fixed;
+    bottom: 1.4rem;
+    right: 1.2rem;
+    z-index: 999;
 }
 .bttn__go-top > * {
-    float: right
+    float: right;
 }
 
 /* Icon button styles */
@@ -288,20 +291,5 @@ a.icon-btn {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transition: 0.4s
+    transition: 0.4s;
 }
-
-/* FOR ANOTHER VERSION - Mobile bottom buttons, row, mobile-only */
-/* .mobile-bottom-row {
-    display: none;
-    align-items: center
-}
-.mobile-bottom-row > * {
-    flex: auto;
-    padding: 0.25rem
-}
-@media screen and (max-width: 430px) {
-    .mobile-bottom-row {
-        display: flex
-    }
-} */
