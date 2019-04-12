@@ -270,12 +270,9 @@ a.bttn--res {
 /* 'Back to top' button styles */
 .bttn__go-top {
     position: fixed;
-    bottom: 1.4rem;
+    bottom: 1.3rem;
     right: 1.2rem;
-    z-index: 999;
-}
-.bttn__go-top > * {
-    float: right;
+    z-index: 900;
 }
 
 /* Icon button styles */
