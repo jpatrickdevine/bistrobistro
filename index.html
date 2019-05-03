@@ -57,7 +57,7 @@
         <!-- Material sidenav list, added styles -->
         <ul class="sidenav__bb">
             <li><a href="#" class="sidenav-close">Home</a></li>
-            <li><a href="#about" class="sidenav-close">About</a></li>
+            <li><a href="#menu" class="sidenav-close">Menu</a></li>
             <li><a href="#events" class="sidenav-close">Private Events</a></li>
             <li><a href="#reservations" class="sidenav-close">Reservations</a></li>
             <li><a href="#contact" class="sidenav-close">Contact</a></li>
@@ -89,16 +89,16 @@
                 Bistro! Bistro!
             </h2>
             <div class="bb-section__content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque. <strong>This website is just for making <a href="#requests">requests</a> to the <a href="./manage">management console</a></strong>. Fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
             </div>
         </section>
 
         <!-- About section -->
-        <section id="about" class="bb-section">
+        <section id="menu" class="bb-section">
             <h2 class="bb-section__heading">
-                About
+                Menu
             </h2>
             <div class="bb-section__content">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
@@ -126,85 +126,88 @@
             </h2>
             <div class="bb-section__content bb-section__content--flex">
                 <div class="bb-section__left-top">
-                    <h3 class="bb-content__heading" style="margin-bottom: 3rem">
-                        Call us
+                    <h3 class="bb-content__heading" style="margin-bottom: 2rem">
+                        Come join us!
                     </h3>
-                    <h6>(555) 555-9999</h6>
+                    <img class="materialboxed bb-section-img"  data-caption="Kiwi crème galette" src="img/dropping-desert.jpg">
+                    <br>
+                    <h6 class="bb-form-header--blue">Call (555)555-9999</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum!</p>
                 </div>
                 <!-- Reservation requests form section -->
                 <div id="requests" class="bb-section__right-bottom">
-                    <h3 class="bb-content__heading">
+                    <h3 class="bb-content__heading" style="margin-bottom: 2rem;">
                         Request a table
-                    </h3>
-                    <div class="row">
-                        <form class="col s12">
+                    </h3>                        
+                    <div class="row" style="background-color: #fafafa; border-radius: 0.7rem; padding: 0.7rem">
+                        <form id="bb_request_form" action="submit-request.php" method="post" class="col s12">
                             <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <label for="f_name">First Name</label>
-                                    <input id="f_name" name="f_name" type="text" class="validate">
-                                    <span class="helper-text" data-error="Required"></span>
-                                </div>
-                                <div class="input-field col s12 m6">
-                                    <label for="l_name">Last Name</label>
-                                    <input id="l_name" name="l_name" type="text" class="validate">
-                                    <span class="helper-text" data-error="Required"></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <label for="email">Email</label>
-                                    <input id="email" type="text" class="validate">
-                                    <span class="helper-text" data-error="Enter a valid email address."></span>
-                                </div>
-                                <div class="input-field col s12 m6">
-                                    <label for="phone">Phone</label>
-                                    <input id="phone" type="text" class="validate">
-                                    <span class="helper-text" data-error="Enter a valid phone number."></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12 m4">
+                                <h6 class="bb-form-header bb-form-header--red">When would you like to come in?</h6>
+                                <div class="input-field col s12 l6">
                                     <label for="date">Date</label>
-                                    <input type="text" class="datepicker">
+                                    <input type="text" name="date" class="datepicker">
                                 </div>
-                                <div class="input-field col s6 m4">
-                                    <select>
-                                        <option value="" disabled selected>Time</option>
-                                        <option value="1">5:30</option>
-                                        <option value="2">7:30</option>
-                                        <option value="3">9:30</option>
+                                <div class="input-field col s6 l3">
+                                    <select name="time">
+                                        <option value="1730">5:30pm</option>
+                                        <option value="1930" selected="selected">7:30pm</option>
+                                        <option value="2130">9:30pm</option>
                                     </select>
+                                    <label>Time</label>
                                 </div>
-                                <div class="input-field col s6 m4">
-                                    <select>
-                                        <option value="" disabled selected>Party</option>
+                                <div class="input-field col s6 l3">
+                                    <select name="party">
                                         <option value="1">1</option>
-                                        <option value="2">2</option>
+                                        <option value="2" selected="selected">2</option>
                                         <option value="3">3</option>
-                                        <option value="3">4</option>
-                                        <option value="3">5</option>
-                                        <option value="3">6</option>
-                                        <option value="3">6+</option>
+                                        <option value="4">4</option>
+                                        <option value="6">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">6+</option>
                                     </select>
+                                    <label>Party Size</label>
                                 </div>
                             </div>
                             <div class="row">
+                                <h6 class="bb-form-header bb-form-header--red" id="required">Who should we contact?</h6>
+                                <div class="input-field col s12 l6">
+                                    <label for="f_name">First Name</label>
+                                    <input id="f_name" name="f_name" type="text">
+                                    <span class="helper-text"></span>
+                                </div>
+                                <div class="input-field col s12 l6">
+                                    <label for="l_name">Last Name</label>
+                                    <input id="l_name" name="l_name" type="text">
+                                    <span class="helper-text"></span>
+                                </div>
+                                <div class="input-field col s12 l6">
+                                    <label for="email">Email</label>
+                                    <input id="email" name="email" type="text">
+                                    <span class="helper-text"></span>
+                                </div>
+                                <div class="input-field col s12 l6">
+                                    <label for="phone">Phone</label>
+                                    <input id="phone" name="phone" type="text">
+                                    <span class="helper-text"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h6 class="bb-form-header bb-form-header--red">Anything else we should know?</h6>
                                 <div class="input-field col s6 m4">
-                                    <label>
-                                        <input type="checkbox">
+                                    <label for="birthday">
+                                        <input type="checkbox" id="birthday" name="birthday">
                                         <span>Birthday</span>
                                     </label>
                                 </div>
                                 <div class="input-field col s6 m4">
-                                    <label>
-                                        <input type="checkbox">
+                                    <label for="anniversary">
+                                        <input type="checkbox" id="anniversary" name="anniversary">
                                         <span>Anniversary</span>
                                     </label>
                                 </div>
                                 <div class="input-field col s6 m4">
-                                    <label>
-                                        <input type="checkbox">
+                                    <label for="allergy">
+                                        <input type="checkbox" id="allergy" name="allergy">
                                         <span>Allergy</span>
                                     </label>
                                 </div>
@@ -212,11 +215,9 @@
                             <br><br>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <label for="textarea2">Additional Information</label>
-                                    <textarea id="textarea2" class="materialize-textarea" data-length="240" placeholder="Special occasions, allergies, etc"></textarea>
+                                    <label for="notes">Additional Information</label>
+                                    <textarea id="notes" name="notes" class="materialize-textarea" data-length="240" placeholder="Requests, allergies, etc"></textarea>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col s12">
                                     <button class="btn waves-effect" type="submit" style="width: 100%">Submit Request</button>
                                 </div>
@@ -254,12 +255,82 @@
     <script>
         // jQuery document ready
         $(document).ready(function(){
+            // var todaysDate = new Date();
+            var tomorrow = Date.now() + 86400000;
             // Initialize Materialize sidenav
             $('.sidenav').sidenav();
             // Initialize Materialize datepicker
-            $('.datepicker').datepicker();
+            $('.datepicker').datepicker({
+                autoClose: true,
+                format: 'ddd, mmm d, yyyy',
+                minDate: new Date(),
+                defaultDate: new Date(tomorrow),
+                setDefaultDate: true
+            });
             // Initialize Materialize form select
             $('select').formSelect();
+            // Character counter
+            $('textarea#notes').characterCounter();
+            // Initialize Material box
+            $('.materialboxed').materialbox();
+            // Form validation
+            $("#bb_request_form").submit(
+                function(event) {
+                    var validForm = true;
+
+                    // validate email with reg exp
+                    var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+                    var email = $("#email").val().trim();
+                    // validate phone with reg exp
+                    var phonePattern = /^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/;
+                    var phone = $("#phone").val().trim();
+
+                    $("#f_name").next().text("");
+                    $("#l_name").next().text("");
+                    $("#email").next().text("");
+                    $("#phone").next().text("");
+
+                    if (phone == "") {
+                        validForm = false;
+                        $("#phone").next().text("Please enter a phone number.");
+                        $("#phone").focus();
+                        $(document).scrollTop( $("#required").offset().top );
+                    } else if ( !phonePattern.test(phone) ) {
+                        validForm = false;
+                        $("#phone").next().text("Please enter a valid phone number.");
+                        $("#phone").focus();
+                        $(document).scrollTop( $("#required").offset().top );
+                    } else {
+                        $("#phone").next().text("");
+                    }
+                    if (email == "") {
+                        validForm = false;
+                        $("#email").next().text("Please enter a email address.");
+                        $("#email").focus();
+                        $(document).scrollTop( $("#required").offset().top );
+                    } else if ( !emailPattern.test(email) ) {
+                        validForm = false;
+                        $("#email").next().text("Please enter a valid email address.");
+                        $("#email").focus();
+                        $(document).scrollTop( $("#required").offset().top );
+                    } else {
+                        $("#email").next().text("");
+                    }
+                    if ($("#l_name").val().trim() == "") {
+                        validForm = false;
+                        $("#l_name").next().text("Please enter a last name.");
+                        $("#l_name").focus();
+                        $(document).scrollTop( $("#required").offset().top );
+                    }
+                    if ($("#f_name").val().trim() == "") {
+                        validForm = false;
+                        $("#f_name").next().text("Please enter a first name.");
+                        $("#f_name").focus();
+                        $(document).scrollTop( $("#required").offset().top );
+                    }
+                    if (validForm == false) { event.preventDefault(); }
+                }
+            );
         });
     </script>
 </body>

@@ -221,6 +221,11 @@ a.bttn--res {
     }
 }
 
+.bb-section__content > p > strong {
+    color: black;
+    letter-spacing: 0.05rem;
+}
+
 /* B!B! section left-top */
 .bb-section__left-top {
     padding: 0 3rem 0 0;
@@ -289,4 +294,20 @@ a.icon-btn {
     align-items: center;
     justify-content: space-around;
     transition: 0.4s;
+}
+
+/* B!B! request form headings */
+.bb-form-header {
+    margin-bottom: 1rem;
+}
+.bb-form-header--red {
+    color: var(--secondary-color);
+}
+.bb-form-header--blue {
+    color: var(--primary-color);
+}
+
+/* B!B! section images */
+.bb-section-img {
+    width: 100%;
 }

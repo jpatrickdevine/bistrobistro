@@ -10,3 +10,10 @@ Thumbs.db
 # sass #
 ######################
 .sass-cache
+# project-specific #
+######################
+*.map
+manage
+mysql
+php
+sass
