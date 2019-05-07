@@ -16,12 +16,12 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
 
+    <!--Import Google Font Montserrat -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Montserrat">
     <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!--Import Google Icon Fonts: Material Icons and Montserrat -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
     <!-- Include Materialize compiled and minified CSS -->
-    <link href="css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <!-- Site styles -->
     <link rel="stylesheet" href="css/bistrobistro.css">
 </head>
@@ -41,9 +41,9 @@
             <a href="#reservations" class="bttn bttn--res" title="Request a Table">
                 Request a Table
             </a>
-            <!-- Material menu icon/button that opens sidenave drawer -->
+            <!-- Menu icon/button that opens sidenave drawer -->
             <a href="#" data-target="pull-drawer" class="sidenav-trigger" title="Open menu">
-                <i class="material-icons bttn__menu">menu</i>
+                <i class="fas fa-bars"></i>
             </a>
         </div>
     </div>
@@ -88,22 +88,55 @@
             <h2 class="bb-section__heading">
                 Bistro! Bistro!
             </h2>
-            <div class="bb-section__content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque. <strong>This website is just for making <a href="#requests">requests</a> to the <a href="./manage">management console</a></strong>. Fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            <!-- 2 column flex section -->
+            <div class="bb-section__content bb-section__content--flex">
+                <!-- Basic info section -->
+                <div class="bb-section__left-top">
+                    <h3 class="bb-content__heading">
+                        Welcome!
+                    </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus! Minus necessitatibus</p>
+                    <a class="waves-effect waves-light btn" style="margin-top: 1rem;" href="#reservations" title="Go to Reservations">
+                        Reservations
+                    </a>
+                </div>
+                <!-- Carousel section -->
+                <div class="bb-section__right-bottom">
+                    <div class="carousel carousel-slider">
+                        <a class="carousel-item" href="#one!"><img src="img/shaking-cocktail.jpg"></a>
+                        <a class="carousel-item" href="#two!"><img src="img/banquette.jpg"></a>
+                        <a class="carousel-item" href="#three!"><img src="img/plating-garnish.jpg"></a>
+                        <a class="carousel-item" href="#four!"><img src="img/soup-and-lentils.jpg"></a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- About section -->
+        <!-- Menu section -->
         <section id="menu" class="bb-section">
             <h2 class="bb-section__heading">
                 Menu
             </h2>
-            <div class="bb-section__content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            <div class="bb-section__content bb-section__content--flex">
+                <div class="bb-section__left-top">
+                    <!-- Photo card section -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/soup-and-lentils.jpg">
+                                    <span class="card-title">Dinner - Spring '19</span>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="blue-text text-darken-4">DOWNLOAD PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-section__right-bottom">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus! Minus necessitatibus</p>
+                </div>
             </div>
         </section>
         
@@ -112,10 +145,28 @@
             <h2 class="bb-section__heading">
                 Private Events
             </h2>
-            <div class="bb-section__content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            <div class="bb-section__content bb-section__content--flex">
+                <div class="bb-section__left-top">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus! Minus necessitatibus</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus! Minus necessitatibus</p>
+                </div>
+                <!-- Reservation requests form section -->
+                <div class="bb-section__right-bottom">
+                    <!-- Photo card section -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/banquette.jpg">
+                                    <span class="card-title">Private Dining</span>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="blue-text text-darken-4">DOWNLOAD PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -126,21 +177,33 @@
             </h2>
             <div class="bb-section__content bb-section__content--flex">
                 <div class="bb-section__left-top">
-                    <h3 class="bb-content__heading" style="margin-bottom: 2rem">
-                        Come join us!
-                    </h3>
-                    <img class="materialboxed bb-section-img"  data-caption="Kiwi crème galette" src="img/dropping-desert.jpg">
-                    <br>
-                    <h6 class="bb-form-header--blue">Call (555)555-9999</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum!</p>
+                    <!-- Photo card section -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/dropping-desert.jpg">
+                                    <span class="card-title">Come join us!</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>To request a reservation, call or use the request form</p>
+                                </div>
+                                <div class="card-action">
+                                    <span class="blue-text text-darken-4">CALL (555)555-9999</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Reservation requests form section -->
                 <div id="requests" class="bb-section__right-bottom">
-                    <h3 class="bb-content__heading" style="margin-bottom: 2rem;">
+                    <h3 class="bb-content__heading">
                         Request a table
-                    </h3>                        
-                    <div class="row" style="background-color: #fafafa; border-radius: 0.7rem; padding: 0.7rem">
-                        <form id="bb_request_form" action="submit-request.php" method="post" class="col s12">
+                    </h3>
+                    <!-- Grey background to request form -->
+                    <div class="row bb-request-form">
+                        <!-- Request form -->
+                        <form id="bb_request_form" class="col s12" action="submit-request.php" method="post">
                             <div class="row">
                                 <h6 class="bb-form-header bb-form-header--red">When would you like to come in?</h6>
                                 <div class="input-field col s12 l6">
@@ -161,7 +224,7 @@
                                         <option value="2" selected="selected">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
-                                        <option value="6">5</option>
+                                        <option value="5">5</option>
                                         <option value="6">6</option>
                                         <option value="7">6+</option>
                                     </select>
@@ -229,22 +292,47 @@
         </section>
 
         <!-- Contact section -->
-        <section id="contact" class="bb-section">
+        <section id="contact" class="bb-section" style="margin-bottom: 0;">
             <h2 class="bb-section__heading">
                 Contact
             </h2>
-            <div class="bb-section__content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus!</p>
+            <div class="bb-section__content bb-section__content--flex">
+                <div class="bb-section__left-top">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis fuga laborum! Minus necessitatibus obcaecati sit, repellendus perspiciatis molestias in nihil illum. Eum vero a cum ipsum nihil? Minus, accusamus! Minus necessitatibus</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione exercitationem voluptates repellat, nisi beatae neque saepe nihil molestias sunt expedita similique nostrum ab cupiditate fugit ad doloremque architecto voluptas voluptatum.</p>
+                </div>
+                <div class="bb-section__right-bottom">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/chef-detailing-plate.jpg">
+                                </div>
+                                <div class="card-action">
+                                    <span class="blue-text text-darken-4">CALL (555)555-9999</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Embed Google Maps iframe of Philly -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97860.96642065841!2d-75.17918085322437!3d39.960282631776835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1557073982161!5m2!1sen!2sus" frameborder="0" style="width: 100%; height: 60vh; border:0; border-top: 2px solid var(--secondary-color); border-bottom: 2px solid var(--secondary-color);" allowfullscreen></iframe>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bb-section__content bb-section__content--footer">
+        &copy; 2019 <a href="https://jpatrickdevine.info">John Devine</a> – IT Capstone, Peirce College – All images borrowed from
+        <a href="https://www.instagram.com/la_foret_noire/" target="_blank">
+            La Forêt Noire
+        </a>
+    </footer>
 
     <!-- 'Back to top' button; bottom right -->
     <div class="bttn__go-top">
         <a href="#" class="icon-btn waves-effect" title="Back to top">
-            <i class="small material-icons">arrow_upward</i>
+            <i class="fas fa-arrow-up"></i>
         </a>
     </div>
 

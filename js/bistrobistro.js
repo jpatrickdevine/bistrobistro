@@ -20,6 +20,11 @@ $(document).ready(function(){
     $('textarea#notes').characterCounter();
     // Initialize Material box
     $('.materialboxed').materialbox();
+    // Initialize Materialize carousel
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
     // Form validation
     $("#bb_request_form").submit(function(event) {
         // initialize control variable

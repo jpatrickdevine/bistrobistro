@@ -169,7 +169,6 @@ a.bttn--res {
 .bb-main-styles {
     position: relative;
     margin: 0;
-    padding-bottom: 50vh;
 }
 
 /* B!B! section styles*/
@@ -207,7 +206,8 @@ a.bttn--res {
 .bb-section__content {
     margin: 2.5rem auto;
     padding: 0 1rem;
-    max-width: 925px;
+    max-width: 1150px;
+    min-height: 85vmin;
 }
 
 /* B!B! section content w/ flex */
@@ -221,15 +221,18 @@ a.bttn--res {
     }
 }
 
-.bb-section__content > p > strong {
-    color: black;
-    letter-spacing: 0.05rem;
+/* Footer styles */
+.bb-section__content--footer {
+    margin: 1.5rem auto;
+    min-height: 1px;
+    font-size: 88%;
+    text-align: center;
 }
 
 /* B!B! section left-top */
 .bb-section__left-top {
-    padding: 0 3rem 0 0;
-    max-width: 42%;
+    padding: 0 3rem;
+    max-width: 50%;
     border-right: 2px solid var(--secondary-color);
 }
 @media screen and (max-width: 769px) {
@@ -244,7 +247,7 @@ a.bttn--res {
 /* B!B! section right-bottom */
 .bb-section__right-bottom {
     width: 100%;
-    padding: 0 0 0 3rem;
+    padding: 0 3rem;
 }
 @media screen and (max-width: 769px) {
     .bb-section__right-bottom {
@@ -254,7 +257,7 @@ a.bttn--res {
 
 /* B!B! content area heading styles */
 .bb-content__heading {
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 1.5rem 0;
     color: #222;
     font-size: 1.2rem;
     font-family: var(--heading-font-family);
@@ -310,4 +313,28 @@ a.icon-btn {
 /* B!B! section images */
 .bb-section-img {
     width: 100%;
+}
+
+/* Fix Materialize default card link color */
+.card-action > a {
+    color: var(--primary-color);
+}
+
+/* Fix link color of menu bars icon */
+.sidenav-trigger {
+    color: var(--primary-color);
+}
+
+/* Add some space on the right of bars in mobile view */
+@media screen and (max-width: 430px) {
+    .sidenav-trigger {
+        margin-right: 0.5rem;
+    }
+}
+
+/* Add a light grey background to the requests form*/
+.bb-request-form {
+    padding: 0.7rem;
+    background-color: #fafafa;
+    border-radius: 0.7rem;
 }
